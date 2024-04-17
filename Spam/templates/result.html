@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/static/Image%201.jpg'); /* Updated background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f0f0f0; /* Fallback background color */
+        }
+        .result-box {
+            margin: 50px auto; /* Center the box vertically and horizontally */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Background color of the box with transparency */
+            border: 2px solid #333; /* Border style */
+            border-radius: 10px; /* Border radius */
+            width: 50%; /* Width of the box */
+            max-width: 600px; /* Maximum width of the box */
+        }
+        h1 {
+            color: #333; /* Color of the heading */
+        }
+        p {
+            margin-top: 20px; /* Space between heading and result */
+            font-size: 18px; /* Font size of the result text */
+            color: #333; /* Color of the result text */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Prediction Result</h1>
+        <p>The input text is predicted to be: {{ result }}</p>
+    </div>
+</body>
+</html>
